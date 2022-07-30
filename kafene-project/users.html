@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kafene-users</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./users.css">
+    <!-- <script src="header.js" type="text/javascript" defer></script> -->
+</head>
+
+<body>
+    <!-- header  -->
+    <div class="topbar">
+        <div class="topbar_LeftMenu">
+            <div class="topbar_logoWrapper"><img
+                    src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p class="topbar_brandName">Kafene</p>
+            </div>
+            <nav>
+                <a class="topbar_menuItem orders" href="./orders.html">Orders</a>
+                <a class="topbar_menuItem products" href="./products.html">Products</a>
+                <a class="topbar_menuItem users topbar-active" href="./users.html">Users</a>
+            </nav>
+        </div>
+        <a class="topbar_menuItem" id="logout" href="">Logout</a>
+    </div>
+
+    <!-- users section  -->
+    <main class="MainContainer">
+        <div class="UserList_PageWrapper">
+            <h1 class="UserList_MainHeading">Users</h1>
+            <div class="UserList_OrdersWrapper">
+                <form class="UserList_FilterWrapper" >
+                    <input class="UserList_SearchBox" id="searchInput" type="search" placeholder="Search by Name">
+                    <input type="reset" class="UserList_Button" value="Reset" id="reset">
+                </form>
+                <!-- table section  -->
+                <div style="width: 100%;">
+                    <table class="UserList_OrderTable">
+                        <tr>
+                            <th>ID</th>
+                            <th>User Avatar</th>
+                            <th>Full Name</th>
+                            <th style="min-width: 100px;">DoB</th>
+                            <th>Gender</th>
+                            <th>Current Location</th>
+                        </tr>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./header.js"type="text/javascript"></script>
+    <script src="./users.js"type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
